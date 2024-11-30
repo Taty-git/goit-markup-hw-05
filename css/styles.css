@@ -521,9 +521,27 @@ img {
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
 
 }
-.overly-icon {
-      
-    
+.btn-close {
+    border-radius: 50%;
+    margin-top: 24px;
+    margin-right: 24px;
+    fill: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);  
+    float: inline-end;    
+}
+
+.icon-close {
+    fill: #2E2F42;
+    align-items: center;
+    justify-content: center;
+}
+.icon-close:hover,
+.icon-close:focus,
+.btn-close:hover,
+.btn-close:active {
+    fill: #ffffff;
+    background-color: #404BBF;
+
 }
 .descr-form {
     font-family: "Roboto", sans-serif;
@@ -533,18 +551,19 @@ img {
         letter-spacing: 0.02em;
         text-align: center;
         color: #2e2f42;
+        padding-top: 72px;
 }
 .overly-form {
     display: block;
     flex-direction: column;
     padding-left: 24px;
 }
-.form-list {
-    padding-top: 16px;
+
+.form-block {
+
 }
-.form-item {
- list-style: none;
- padding-bottom: 8px;
+.input-zone {
+    position: relative;
 }
 .data-descr {
     font-family: "Roboto", sans-serif;
@@ -555,12 +574,25 @@ img {
         color: #8e8f99;
         gap: 8px;
 }
+.input-zone {
+    display: flex;
+}
+
+
 .text {
     border: 1px solid #4d5ae5;
         border-radius: 4px;
         width: 360px;
         height: 40px;
 }
+.form-icon {
+        position: absolute;
+        fill: #2e2f42;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-left: 16px;
+        
+    }
 ::placeholder {
     font-family: "Roboto", sans-serif;
         font-weight: 400;
@@ -569,8 +601,16 @@ img {
         letter-spacing: 0.04em;
         color: rgba(46, 47, 66, 0.4);x
 }
-input {
+.input {
+    width: 360px;
+    height: 40px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+        border-radius: 4px;
+}
+
+.user-comment:placeholder-shown {
     width: 360px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
+}
 }
