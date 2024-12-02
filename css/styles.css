@@ -490,7 +490,7 @@ img {
 }
 .footer-media {
     display: block;
-    margin-left: 120px;
+ 
    
 }
 .social-link-foot:hover,
@@ -501,7 +501,61 @@ img {
 .icons-foot{
     fill: #f4f4fd;
 }
-
+.subscribe-box {
+    width: 453px;
+    margin-left: 80px;
+    
+}
+.sub-title {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin-right: 156px;
+}
+.subscribe-form {
+    display: flex;
+    gap: 24px;
+}
+.sub-input {
+    width: 264px;
+    height: 40px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: #ffffff;
+    
+}
+.sub-input:placeholder-shown {
+    color #ffffff;
+}
+.sub-btn {
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4D5AE5;
+    border: none;
+    border-radius: 4px;
+}
+.icon-send {
+    margin-left: 16px;
+}
 .modal-overly {
     position: fixed;
     top: 0;
