@@ -519,33 +519,36 @@ img {
     width: 408px;
     height: 584px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
-
+    position: absolute;
+    
 }
 .btn-close {
+    position: absolute;
     border-radius: 50%;
-    margin-top: 24px;
-    margin-right: 24px;
+    top:24px;
+    left: 24px;
     height: 24px;
     width: 24px;
-    fill: #e7e9fc;
     border: 1px solid rgba(0, 0, 0, 0.1);  
-    float: inline-end;
+    display: flex;
+    padding: 0;
+    background-color: #e7e9fc;
     justify-content: center;
     align-items: center;
-     
+       
 }
+.btn-close:hover > svg,
+.btn-close:focus > svg {
+    fill: #ffffff;
+    border: none;
+    
 
-.icon-close {
-    fill: #2E2F42;
-    align-items: center;
-    justify-content: center;
 }
 .icon-close:hover,
 .icon-close:focus,
 .btn-close:hover,
 .btn-close:active {
-    fill: #ffffff;
-    background-color: #404BBF;
+   background-color: #404BBF;
     
 }
 .descr-form {
@@ -572,6 +575,7 @@ img {
 .input-zone {
     position: relative;
     margin-top: 4px;
+    display: flex;
 }
 .input:focus+svg {
     fill: #4D5AE5;  
@@ -579,20 +583,15 @@ img {
 }
 .data-descr {
     font-family: "Roboto", sans-serif;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 117%;
-        letter-spacing: 0.04em;
-        color: #8e8f99;
-        margin-top: 8px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+    margin-top: 8px;
 }
-.input-zone {
-    display: flex;
-}
-
-
 .text {
-    border: 1px solid #4d5ae5;
+        border: 1px solid #4d5ae5;
         border-radius: 4px;
         width: 360px;
         height: 40px;
@@ -602,11 +601,10 @@ img {
         fill: #2e2f42;
         top: 50%;
         transform: translateY(-50%);
-        margin-left: 16px;
-        
+        margin-left: 16px;        
     }
 ::placeholder {
-    font-family: "Roboto", sans-serif;
+        font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-size: 12px;
         line-height: 117%;
@@ -614,15 +612,15 @@ img {
         color: rgba(46, 47, 66, 0.4);x
 }
 .input {
-    width: 360px;
-    height: 40px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 4px;
-    text-indent: 38px;
+        width: 360px;
+        height: 40px;
+        border: 1px solid rgba(46, 47, 66, 0.4);
+        border-radius: 4px;
+        text-indent: 38px;
 }
 .input:focus {
-    outline: none;
-    border-color: #4D5AE5;
+        outline: none;
+        border-color: #4D5AE5;
 }
 .user-comment:placeholder-shown {
     width: 100%;
@@ -649,28 +647,32 @@ img {
     line-height: 14px;
     letter-spacing: 0.04em;
     color: #8e8f99;
-    align-items: center;
-    justify-content: center;
+        
 }
-.policy {
-    line-height: 16px;
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
+.policy {  
     color: #4d5ae5;
 }
-.checkbox-input {
+.check-empty {
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     width: 16px;
     height: 16px;
     margin-top: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+    
 }
-.checkbox-input:checked+.label>.span-checkbox {
+.checkbox-input:checked + .user-accept >.check-empty {
     background-color: #404BBF;
     border: none;
-    fill: #F4F4FD;
-
+    fill: #ffffff;
 }
+.checkbox-input:focus + .user-accept>.check-empty {
+    border-color: #404BBF;
+}
+
 .btn-submit {
     border-radius: 4px;
     padding: 16px 32px;
