@@ -546,7 +546,7 @@ img {
 .btn-close:active {
     fill: #ffffff;
     background-color: #404BBF;
-
+    
 }
 .descr-form {
     font-family: "Roboto", sans-serif;
@@ -573,8 +573,10 @@ img {
     position: relative;
     margin-top: 4px;
 }
-
-
+.input:focus+svg {
+    fill: #4D5AE5;  
+    
+}
 .data-descr {
     font-family: "Roboto", sans-serif;
         font-weight: 400;
@@ -618,7 +620,10 @@ img {
     border-radius: 4px;
     text-indent: 38px;
 }
-
+.input:focus {
+    outline: none;
+    border-color: #4D5AE5;
+}
 .user-comment:placeholder-shown {
     width: 100%;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -632,6 +637,10 @@ img {
     color: rgba(46, 47, 66, 0.4);
     resize: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.user-comment:focus {
+    outline: none;
+    border-color: #4D5AE5;
 }
 
 .user-accept {
@@ -656,8 +665,11 @@ img {
     height: 16px;
     margin-top: 16px;
 }
-input:checked+label>span {
-    background-color: ;
+.checkbox-input:checked+.label>.span-checkbox {
+    background-color: #404BBF;
+    border: none;
+    fill: #F4F4FD;
+
 }
 .btn-submit {
     border-radius: 4px;
