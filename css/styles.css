@@ -566,14 +566,19 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgba(46, 47, 66, 0.4);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
     background-color: #FCFCFC;
     border-radius: 4px;
     width: 408px;
-    height: 584px;
+    min-height: 584px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .btn-close {
@@ -589,13 +594,15 @@ img {
     background-color: #e7e9fc;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
        
 }
 .btn-close:hover > svg,
 .btn-close:focus > svg {
     fill: #ffffff;
     border: none;
-    
+    background-color: #404bbf;
 
 }
 .icon-close:hover,
@@ -603,6 +610,7 @@ img {
 .btn-close:hover,
 .btn-close:active {
    background-color: #404BBF;
+   border: none;
     
 }
 .descr-form {
@@ -614,6 +622,7 @@ img {
     text-align: center;
     color: #2e2f42;
     padding-top: 72px;
+    margin-bottom: 16px;
 }
 .overly-form {
     display: block;
@@ -676,6 +685,10 @@ img {
         outline: none;
         border-color: #4D5AE5;
 }
+.imput-check-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .user-comment:placeholder-shown {
     width: 100%;
     border: 1px solid rgba(46, 47, 66, 0.4);
