@@ -637,13 +637,14 @@ img {
     width: 360px;
     margin-bottom: 8px;
     display: block;
-    margin-bottom: 4px;
+
 }
 
 .input-zone {
     position: relative;
     margin-top: 4px;
     display: flex;
+    
 }
 .input:focus+svg {
     fill: #4D5AE5;  
@@ -657,6 +658,8 @@ img {
     letter-spacing: 0.04em;
     color: #8e8f99;
     margin-top: 8px;
+    display: block;
+    margin-bottom: 4px;
 }
 .text {
     border: 1px solid #4d5ae5;
@@ -670,7 +673,8 @@ img {
     top: 50%;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    left: 16px
+    left: 16px;
+    padding: 72px 24px 24px 24px;
 }
 .icon-close {
     fill: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -700,6 +704,9 @@ img {
 .imput-check-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.form-block-comment {
+    margin-bottom: 16px;
+}
 
 .user-comment:placeholder-shown {
     width: 100%;
@@ -714,6 +721,8 @@ img {
     color: rgba(46, 47, 66, 0.4);
     resize: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: transparent;
+    outline: transparent;
 }
 .user-comment:focus {
     outline: none;
@@ -723,7 +732,7 @@ img {
 .user-accept {
     font-weight: 400;
     font-size: 12px;
-    line-height: 14px;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
         
@@ -741,6 +750,7 @@ img {
     align-items: center;
     justify-content: center;
     fill: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .checkbox-input:checked + .user-accept >.check-empty {
@@ -755,7 +765,6 @@ img {
 .btn-submit {
     border-radius: 4px;
     padding: 16px 32px;
-    width: 169px;
     height: 56px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: #4d5ae5;
@@ -770,5 +779,11 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    min-width: 169px;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
+}
+.check-field {
+    margin-bottom: 24px;
 }
